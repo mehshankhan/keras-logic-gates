@@ -39,7 +39,7 @@ classifier.add(Dense(units = 1, kernel_initializer = 'uniform', activation = 'si
 # Compiling the ANN
 classifier.compile(loss='binary_crossentropy', metrics=['accuracy'], optimizer='adam')
 # Fitting the ANN to the Training set
-classifier.fit(table, logic, batch_size = 10, epochs = 3000)
+classifier.fit(table, logic, batch_size = 4, epochs = 3000)
 
 # Part 3 - Making predictions and evaluating the model
 
